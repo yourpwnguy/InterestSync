@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    height: 125vh;
+    justify-content: center;
+    align-items: center;
+    background: #111927;
+    color: #a4b1cd;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #1a2332;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px;
+    border-radius: 5px;
+}
+
+.container .overlay .title {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    color: #fff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.card .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.user-details .inputbox .details {
+    font-weight: 500;
+    margin: 50px 0px;
+}
+
+.card-container .card .user-details .inputbox {
+    width: calc(100% - 40px);
+}
+
+.card .user-details .inputbox input {
+    height: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #111927;
+    color: #a4b1cd;
+    padding: 0px 15px;
+    font-size: 1rem;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.user-details-image {
+    align-items: end;
+}
+
+.user-details-image .image-inputbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.programming-drop-down-menu {
+    margin: 20px 0px;
+    font-weight: 500;
+}
+
+.programming-drop-down-menu select {
+    width: calc(100% - 40px);
+    height: 50px;
+    border: none;
+    background: #111927;
+    color: #a4b1cd;
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.social-drop-down-menu {
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+
+}
+
+
+.social-drop-down-menu .details {
+    width: 160px;
+    font-weight: 500;
+}
+
+.social-drop-down-menu select {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #111927;
+    color: #a4b1cd;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+
+.card .image-inputbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .image-inputbox img {
+    width: 200px;
+}
+
+.image-inputbox .round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    right: 32%;
+    background: #00B4FF;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.image-inputbox .round input[type="file"] {
+    position: absolute;
+    cursor: pointer;
+    /* transform: scale(2); */
+    opacity: 0;
+}
+
+.image-inputbox input[type=file]::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+.card .image-inputbox .details {
+    font-weight: 500;
+}
+
+.card .image-inputbox input {
+    padding-top: 10px;
+}
+
+.group-desc-textarea {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #111927;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #a4b1cd;
+    padding: 15px;
+    resize: none;
+    font-size: 14px;
+}
+
+.group-description .details {
+    font-weight: 500;
+}
+
+.button button {
+    height: 45px;
+    width: 100%;
+    color: black;
+    font-size: 1rem;
+    font-weight: 00;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #00abf0;
+    border-radius: 5px;
+}
+
+.register-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button button:hover {
+    background: #008dc4;
+}
+
+.container .terms-and-conditions {
+    margin-bottom: 5px;
+}
+
+.container .terms-and-conditions p,
+.container .terms-and-conditions a {
+    margin-top: 30px;
+    color: #a4b1cd;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .terms-and-conditions a {
+    color: #00abf0;
+}
+
+.container .terms-and-conditions a:hover {
+    color: #008dc4;
+    text-decoration: none;
+}
+
+
+
+.ending-container {
+    position: absolute;
+    display: flex;
+    top: 830px;
+    /* margin-top: 20px;
+    margin-bottom: 50px; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #a4b1cd;
+}
+
+.logo-bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-bottom-container img {
+    width: 30px;
+    padding: 0 5px;
+}
+
+.logo-bottom-container p {
+    font-size: 0.9em;
+}
+
+.logo-bottom-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #a4b1cd;
+    font-size: 0.9em;
+}
+
+/* .programming-drop-down-menu select option:hover {
+    background-color: #1a2332;
+} */

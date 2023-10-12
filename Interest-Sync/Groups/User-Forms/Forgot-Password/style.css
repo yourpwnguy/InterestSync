@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Import Google font - Poppins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #111927;
+}
+
+.container {
+    /* position: relative; */
+    max-width: 580px;
+    width: 100%;
+    background: rgb(26, 35, 50);
+    margin: 75px;
+    margin-bottom: 155px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/Interest-Sync/User-Forms/New\ Project\ 44.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 55px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.overlay-container {
+    text-align: center;
+}
+
+.overlay-container h5 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.overlay-container p {
+    color: #a4b1cd;
+}
+
+.logo-overlay a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-overlay img {
+    position: absolute;
+    top: -40px;
+    left: 245px;
+}
+
+.logo-overlay img{
+    width: 85px;
+}
+
+.form-container {
+    margin: 60px;
+    margin-bottom: 55px;
+    width: 100%;
+    padding-right: 120px;
+     
+}
+
+.form {
+    margin: -20px;
+    margin-top: 60px;
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    font-weight: 600;
+    color: #a4b1cd;
+}
+
+.input-box input {
+    border-radius: 5px;
+    background: rgb(17, 25, 39);
+}
+
+.form :where(.input-box input) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #a4b1cd;
+    border: none;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form button {
+    height: 40px;
+    width: 100%;
+    color : black;
+    font-size: 1rem;
+    font-weight: 00;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgb(0, 171, 240);
+    border-radius: 5px;
+}
+
+.form button:hover {
+    /* background: rgb(88, 56, 250); */
+    background: #008dc4;
+}
+;
+
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+}
+
+
+
+
+

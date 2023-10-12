@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Import Google font - Poppins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #111927;
+}
+
+.container {
+    /* position: relative; */
+    max-width: 580px;
+    width: 100%;
+    background: #1a2332;
+    margin: 75px;
+    margin-bottom: 155px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/Interest-Sync/User-Forms/New\ Project\ 44.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 55px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.overlay-container {
+    text-align: center;
+}
+
+.overlay-container h5 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.overlay-container p {
+    color: rgb(164, 177, 205);
+}
+
+.logo-overlay a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-overlay img {
+    position: absolute;
+    top: -40px;
+    left: 245px;
+}
+
+.logo-overlay img{
+    width: 85px;
+}
+
+.form-container {
+    margin: 60px;
+    margin-bottom: 55px;
+    width: 100%;
+    padding-right: 120px;
+     
+}
+
+.form {
+    margin: -20px;
+    margin-top: 60px;
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    font-weight: 600;
+    color: #a4b1cd;
+}
+
+.input-box input {
+    border-radius: 5px;
+    background: rgb(17, 25, 39);
+}
+
+.form :where(.input-box input) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #a4b1cd;
+    border: none;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    color : black;
+    font-size: 1rem;
+    font-weight: 00;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #00abf0;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    /* background: rgb(88, 56, 250); */
+    background: #008dc4;
+}
+
+.check-me {
+    display: flex;
+    align-items: center;
+    color: #a4b1cd;
+    margin-top: 25px;
+    gap: 10px;
+    user-select: none;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #111927;
+    border-radius: .25rem;
+    appearance: none;
+    cursor: pointer;
+    /* border: 1px solid #a4b1cd; */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #00abf0;
+}
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    top: 0.2rem;
+    left: 0.49rem;
+    width: 2px;
+    height: 9px;
+    border: 4px solid transparent;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg) scale(1);
+}
+
+input[type="checkbox"]:checked:before {
+    border-color: #fff;
+    animation: checkAnim .4s ease;
+}
+
+@keyframes checkAnim {
+    from {
+        transform: rotate(45deg) scale(0);
+    }
+}
+
+
+.forgot-password {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 30px;
+    gap: 8px;
+}
+
+.forgot-password img {
+    width: 1.24rem;
+    height: 1.1999rem;
+}
+.forgot-password p, a{
+    text-align:left;
+    text-decoration: none;
+    color: #a4b1cd;
+}
+
+
+.ending-container {
+    position: absolute;
+    display: flex;
+    top: 770px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #a4b1cd;
+}
+
+.ending-container .already-have-account a {
+    text-decoration: none;
+    color: #00abf0;
+}
+
+.ending-container .already-have-account  a:hover {
+    color: #008dc4;
+}
+
+
+.logo-bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.logo-bottom-container img {
+    width: 30px;
+    padding: 0 5px;
+}
+
+.logo-bottom-container p {
+    font-size: 0.9em;
+}
+
+.logo-bottom-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #a4b1cd;
+    font-size: 0.9em;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+}
+
+
+
+
+
